@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>tap</class>
+ <widget class="QDialog" name="tap">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>533</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>533</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTabWidget::tab-bar {
+    left: 5px; /* move to the right by 5px */
+}
+
+/* Style the tab using the tab sub-control. Note that
+    it reads QTabBar _not_ QTabWidget */
+QTabBar::tab {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #2c3e50, stop: 0.4 #2c3e50,
+                                stop: 0.5 #2c3e50, stop: 1.0 #2c3e50);
+    border: 2px solid #7f8c8d;
+    border-bottom-color: #7f8c8d; /* same as the pane color */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    min-width: 255px;
+    padding: 2px;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #2980b9, stop: 0.4 #2980b9,
+                                stop: 0.5 #2980b9, stop: 1.0 #ecf0f1);
+}
+
+QTabBar::tab:selected {
+    border-color: #7f8c8d;
+    border-bottom-color: #7f8c8d; /* same as pane color */
+}
+
+QTabBar::tab:!selected {
+    margin-top: 5px; /* make non-selected tabs look smaller */
+}</string>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::North</enum>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Triangular</enum>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <widget class="QWidget" name="view">
+    <attribute name="title">
+     <string>VIEW</string>
+    </attribute>
+    <widget class="QTableWidget" name="viewtable">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>150</y>
+       <width>441</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ViewBackground">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>800</width>
+       <height>533</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>guest_backgrounds/guest2-01.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>60</y>
+       <width>151</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(&quot;C:/Users/game/Desktop/smart - Copie (2)/gfx/Finalcons/padlock.png&quot;)</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <zorder>ViewBackground</zorder>
+    <zorder>viewtable</zorder>
+    <zorder>label</zorder>
+   </widget>
+   <widget class="QWidget" name="add">
+    <attribute name="title">
+     <string>ADD</string>
+    </attribute>
+    <widget class="QLineEdit" name="addpiece">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>260</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: lightgrey;
+    selection-background-color: darkgray;
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>PIECE NAME</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="addid">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>180</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: lightgrey;
+    selection-background-color: darkgray;
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>ID</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addtap">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>310</y>
+       <width>111</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ADD</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="AddBackground">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>800</width>
+       <height>533</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>guest_backgrounds/guest2-01.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_1">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>60</y>
+       <width>151</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(&quot;C:/Users/game/Desktop/smart - Copie (2)/gfx/Finalcons/padlock.png&quot;)</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <zorder>AddBackground</zorder>
+    <zorder>addpiece</zorder>
+    <zorder>addid</zorder>
+    <zorder>addtap</zorder>
+    <zorder>label_1</zorder>
+   </widget>
+   <widget class="QWidget" name="remove">
+    <attribute name="title">
+     <string>REMOVE</string>
+    </attribute>
+    <widget class="QTableWidget" name="viewtable2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>150</y>
+       <width>441</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="deletetap">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>370</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>DELETE</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="RemoveBackground">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>800</width>
+       <height>533</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>guest_backgrounds/guest2-01.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>60</y>
+       <width>151</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(&quot;C:/Users/game/Desktop/smart - Copie (2)/gfx/Finalcons/padlock.png&quot;)</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <zorder>RemoveBackground</zorder>
+    <zorder>viewtable2</zorder>
+    <zorder>deletetap</zorder>
+    <zorder>label_2</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>light</class>
+ <widget class="QDialog" name="light">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>570</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BACK</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>570</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTabWidget::tab-bar {
+    left: 5px; /* move to the right by 5px */
+}
+
+/* Style the tab using the tab sub-control. Note that
+    it reads QTabBar _not_ QTabWidget */
+QTabBar::tab {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #2c3e50, stop: 0.4 #2c3e50,
+                                stop: 0.5 #2c3e50, stop: 1.0 #2c3e50);
+    border: 2px solid #7f8c8d;
+    border-bottom-color: #7f8c8d; /* same as the pane color */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    min-width: 255px;
+    padding: 2px;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #2980b9, stop: 0.4 #2980b9,
+                                stop: 0.5 #2980b9, stop: 1.0 #ecf0f1);
+}
+
+QTabBar::tab:selected {
+    border-color: #7f8c8d;
+    border-bottom-color: #7f8c8d; /* same as pane color */
+}
+
+QTabBar::tab:!selected {
+    margin-top: 5px; /* make non-selected tabs look smaller */
+}</string>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::North</enum>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="view">
+    <attribute name="title">
+     <string>VIEW</string>
+    </attribute>
+    <widget class="QTableWidget" name="viewtable">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>240</y>
+       <width>401</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="turnon">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>470</y>
+       <width>154</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border: 2px solid #8f8f91;
+    border-radius: 6px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #dadbde, stop: 1 #f6f7fa);
+    min-width: 150px;
+}
+ 
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #2c3e50, stop: 1 #34495e);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Turn On</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="turnoff">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>470</y>
+       <width>154</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border: 2px solid #8f8f91;
+    border-radius: 6px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #dadbde, stop: 1 #f6f7fa);
+    min-width: 150px;
+}
+ 
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #2c3e50, stop: 1 #34495e);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Turn Off</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ViewBackground">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>800</width>
+       <height>533</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>guest_backgrounds/guest4-01.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_light_2">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>60</y>
+       <width>151</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(&quot;C:/Users/game/Desktop/smart - Copie (2)/gfx/Finalcons/light-bulb.png&quot;)</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>gfx/Finalcons/light.png</pixmap>
+     </property>
+    </widget>
+    <zorder>ViewBackground</zorder>
+    <zorder>viewtable</zorder>
+    <zorder>turnon</zorder>
+    <zorder>turnoff</zorder>
+    <zorder>label_light_2</zorder>
+   </widget>
+   <widget class="QWidget" name="add">
+    <attribute name="title">
+     <string>ADD</string>
+    </attribute>
+    <widget class="QLineEdit" name="addpiece">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>410</y>
+       <width>291</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: lightgrey;
+    selection-background-color: darkgray;
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>PIECE NAME</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addlight">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>470</y>
+       <width>241</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border: 2px solid #8f8f91;
+    border-radius: 6px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #dadbde, stop: 1 #f6f7fa);
+    min-width: 150px;
+}
+ 
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #2c3e50, stop: 1 #34495e);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>ADD</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="addid">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>330</y>
+       <width>291</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: lightgrey;
+    selection-background-color: darkgray;
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>ID</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="addstate">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>370</y>
+       <width>291</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: lightgrey;
+    selection-background-color: darkgray;
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>STATE</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="AddBackground">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>800</width>
+       <height>533</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>guest_backgrounds/guest2-01.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_light_3">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>60</y>
+       <width>151</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(&quot;C:/Users/game/Desktop/smart - Copie (2)/gfx/Finalcons/light-bulb.png&quot;)</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>gfx/Finalcons/light.png</pixmap>
+     </property>
+    </widget>
+    <zorder>AddBackground</zorder>
+    <zorder>addpiece</zorder>
+    <zorder>addlight</zorder>
+    <zorder>addid</zorder>
+    <zorder>addstate</zorder>
+    <zorder>label_light_3</zorder>
+   </widget>
+   <widget class="QWidget" name="remove">
+    <attribute name="title">
+     <string>REMOVE</string>
+    </attribute>
+    <widget class="QLabel" name="label_light">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>60</y>
+       <width>151</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(&quot;C:/Users/game/Desktop/smart - Copie (2)/gfx/Finalcons/light-bulb.png&quot;)</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>gfx/Finalcons/light.png</pixmap>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="deletelight">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>470</y>
+       <width>154</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border: 2px solid #8f8f91;
+    border-radius: 6px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #dadbde, stop: 1 #f6f7fa);
+    min-width: 150px;
+}
+ 
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #2c3e50, stop: 1 #34495e);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>DELETE</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="viewtable_light">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>240</y>
+       <width>401</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="RemoveBackground">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>800</width>
+       <height>533</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>guest_backgrounds/guest1-01.png</pixmap>
+     </property>
+    </widget>
+    <zorder>RemoveBackground</zorder>
+    <zorder>label_light</zorder>
+    <zorder>deletelight</zorder>
+    <zorder>viewtable_light</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

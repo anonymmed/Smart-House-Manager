@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>signup</class>
+ <widget class="QDialog" name="signup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLineEdit" name="username">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>60</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: lightgrey;
+    selection-background-color: darkgray;
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>username</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="password">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>110</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: lightgrey;
+    selection-background-color: darkgray;
+}</string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>password</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="type">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>160</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string/>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ADMIN</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">GUEST</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>220</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Sign Up</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>320</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BACK</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="id">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>20</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: lightgrey;
+    selection-background-color: darkgray;
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>id</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

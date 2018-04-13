@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>adminwindow</class>
+ <widget class="QDialog" name="adminwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>533</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_secutiry">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>90</y>
+     <width>150</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:url(&quot;gfx/padlocki.png&quot;);	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_temperature">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>340</y>
+     <width>150</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_light">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>90</y>
+     <width>150</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_garage">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>90</y>
+     <width>150</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_tap">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>340</y>
+     <width>150</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>500</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LOG Out</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_light">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>90</y>
+     <width>150</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>gfx/Finalcons/light-bulb.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_tap">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>340</y>
+     <width>150</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>gfx/Finalcons/tap.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_temperature">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>340</y>
+     <width>150</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>gfx/Finalcons/thermometer.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_garage">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>90</y>
+     <width>150</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>gfx/Finalcons/garage.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_security">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>90</y>
+     <width>150</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>gfx/Finalcons/padlock.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>533</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_user">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>340</y>
+     <width>150</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_user">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>340</y>
+     <width>150</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>gfx/Finalcons/man.png</pixmap>
+   </property>
+  </widget>
+  <zorder>background</zorder>
+  <zorder>label_garage</zorder>
+  <zorder>label_user</zorder>
+  <zorder>label_light</zorder>
+  <zorder>pushButton_light</zorder>
+  <zorder>label_temperature</zorder>
+  <zorder>label_security</zorder>
+  <zorder>label_tap</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>pushButton_tap</zorder>
+  <zorder>pushButton_secutiry</zorder>
+  <zorder>pushButton_temperature</zorder>
+  <zorder>pushButton_garage</zorder>
+  <zorder>pushButton_user</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
